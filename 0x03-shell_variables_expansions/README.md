@@ -1,1 +1,1 @@
-A look at shell variable expansions
+Projects on Shell alias, variables and expansions
