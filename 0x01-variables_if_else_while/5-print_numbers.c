@@ -7,12 +7,13 @@
  */
 int main(void)
 {
-char n;
+int n;
 for (n = 0; n < 10; n++)
-{
-putchar(n);
-}
-putchar('\n');
+
+printf("%d", n);
+
+printf("\n");
+
 return (0);
 
 
