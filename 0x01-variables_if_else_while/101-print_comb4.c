@@ -22,7 +22,6 @@ if (num < num1 && num1 < num2)
 putchar(num);
 putchar(num1);
 putchar(num2);
-	
 
 
 if (num != '7')
