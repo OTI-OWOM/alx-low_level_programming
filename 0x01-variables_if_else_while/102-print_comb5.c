@@ -25,7 +25,7 @@ putchar(num1);
 putchar(' ');
 putchar(num2);
 putchar(num3);
-if (num0 + num1 + num2 + num3 == 227 && num0 ==57)
+if (num0 + num1 + num2 + num3 == 227 && num0 == 57)
 
 {
 
