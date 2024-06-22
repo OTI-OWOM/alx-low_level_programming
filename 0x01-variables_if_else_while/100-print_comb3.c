@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Write a program that prints all possible different 
+ * main - Write a program that prints all possible different
  *combinations of two digits.
  *
  *Return: Always 0 (Sucess)
@@ -32,7 +32,7 @@ putchar (' ');
 }
 
 }
-  
+
 
 putchar ('\n');
 return (0);
