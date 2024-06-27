@@ -2,10 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - Prints a Fizz Buzz program
- *
- * Return: Always 0 (Success)
- */
+*main - program that prints either number
+*or fizz or buzz or fizzBuzz
+*
+*
+*Return: returns 0
+*/
+
 
 int main(void)
 {
@@ -19,7 +22,7 @@ printf("FizzBuzz");
 }
 else if (x % 3 == 0)
 {
-printf("Fizz");
+printf("Fizz);
 }
 else if (x % 5 == 0)
 {
