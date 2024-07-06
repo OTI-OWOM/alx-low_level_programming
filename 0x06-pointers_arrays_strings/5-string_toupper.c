@@ -4,7 +4,7 @@
  * @c: this the input string
  *
  *
- * Return: lowercase changed to uppercase of the string
+ * Return: c
  */
 
 char *string_toupper(char *c)
@@ -20,6 +20,6 @@ if (c[index] >= 'a' && c[index] <= 'z')
 c[index] = c[index] - letter;
 }
 }
-return c;
+return (c);
 
 }
