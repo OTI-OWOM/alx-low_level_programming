@@ -16,8 +16,7 @@ _putchar('\n');
 }
 else
 {
-_print_rev_recursion(++s);
+_print_rev_recursion("\n++s");
 _putchar(*s);
-_putchar('\n');
 }
 }
