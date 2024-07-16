@@ -49,7 +49,7 @@ return (n);
  * @argc: number of argurment
  * @argv: array of argurment
  *
- * Return: Always 0.
+ * Return: 0 (Sucess), 1 (Error)
  */
 
 int main(int argc, char *argv[])
@@ -63,7 +63,7 @@ return (1);
 }
 num1 = _atoi(argv[1]);
 num2 = _atoi(argv[2]);
-result = num1 * num2;
+result = num1 *num2;
 
 printf("%d\n", result);
 return (0);
