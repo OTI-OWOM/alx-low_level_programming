@@ -6,26 +6,30 @@
  *of the string str.
  *@str: string to duplicate
  *
- *Return: Pointer to 'a' the new duped string
+ *Return: Pointer to the copied string (SUCESS), NULL (Error)
  */
 
 char *_strdup(char *str)
 {
 char *a;
-int i, c;
+unsigned int i, c;
+
+i = 0;
+c = 0;
+
 
 if (str == NULL)
 return (NULL);
 
-for (i = 0; str[i] != '\0'; i++)
-;
-a = malloc(i * sizeof(*a) + 1);
+while (str[i])
+i++;
+
+a = malloc(sizeof(*a) * (i + 1));
 
 if (a == NULL)
 return (NULL);
 
-for (c = 0; c < i; c++)
-a[c] = str[i];
-a[c] = '\0';
+while ((a[c] = str[i]) != '\0')
+c++;
 return (a);
 }
