@@ -8,7 +8,7 @@
  *@argv: argument vector
  *
  *Return: Always 0 (SUCESS)
- */ 
+ */
 int main(int argc, char *argv[])
 {
 int (*oprt)(int, int);

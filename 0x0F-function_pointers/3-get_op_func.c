@@ -5,7 +5,7 @@
 /**
  *get_op_func - selects the correct function to perform
  *the operation asked by the user
- *@s: string parameter 
+ *@s: string parameter
  *
  *Return: return 0 if @s doesn't match any of the 5 expected
  *operators
@@ -23,7 +23,7 @@ op_t ops[] = {
 int i = 0;
 while (i < 5)
 {
-if (strcmp(s, ops[i].op)== 0)
+if (strcmp(s, ops[i].op) == 0)
 return (ops[i].f);
 i++;
 }
