@@ -15,11 +15,11 @@ return (a + b);
 }
 
 /**
- *op_sub - subtracts two 
+ *op_sub - subtracts two
  *@a: first parameter
  *@b: second parameter
  *
- *Return: return sub 
+ *Return: return sub
  */
 
 int op_sub(int a, int b)
@@ -32,7 +32,7 @@ return (a - b);
  *@a: first parameter
  *@b: second parameter
  *
- *Return: return mul 
+ *Return: return mul
  */
 
 int op_mul(int a, int b)
@@ -55,7 +55,7 @@ if (b == 0)
 printf("Error\n");
 exit(100);
 }
-return(a / b);
+return (a / b);
 }
 
 /**
