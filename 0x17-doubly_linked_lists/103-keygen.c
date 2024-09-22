@@ -98,4 +98,4 @@ key[5] = h[res];
 key[6] = '\0';
 printf("%s\n", key);
 return (0);
-} 
+}
