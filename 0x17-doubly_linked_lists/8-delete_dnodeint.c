@@ -7,43 +7,28 @@
   * @index: index of the node to delete
   * Return: value of the node deleted
   */
-
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-dlistint_t *current = *head;
-unsigned int count = 0;
-if (*head != NULL)
-{
+dlistint_t *tmp_del, *tmp_head;
+
+if (!head || !*head)
 return (-1);
-}
+tmp_head = *head;
 if (index == 0)
 {
-*head = current->next;
-if (current->next != NULL)
-{
-current->next->prev = NULL;
-}
-free(current);
+*head = (*head)->next;
+(*head)->prev = NULL;
+free(tmp_head);
 return (1);
 }
-while (current != NULL && count < index)
-{
-current = current->next;
-count++;
-}
-
-if (current == NULL)
-{
+for ( ; index > 1 && tmp_head && tmp_head->next; index--)
+tmp_head = tmp_head->next;
+if (!tmp_head->next)
 return (-1);
-}
-if (current->next != NULL)
-{
-current->next->prev = current->prev;
-}
-if (current->prev != NULL)
-{
-current->prev->next = current->next;
-}
-free(current);
+tmp_del = tmp_head->next;
+tmp_head->next = tmp_del->next ? tmp_del->next : NULL;
+if (tmp_del->next)
+tmp_del->next->prev = tmp_head;
+free(tmp_del);
 return (1);
 }
